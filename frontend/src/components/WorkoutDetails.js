@@ -11,7 +11,7 @@ const WorkoutDetails = ({ workout }) => {
         <strong>Number of reps: </strong>
         {workout.reps}
       </p>
-      <p>{workout.createdAt}</p>
+      {new Date(workout.createdAt).toLocaleString()}
     </div>
   );
 };
